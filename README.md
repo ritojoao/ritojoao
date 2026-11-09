@@ -2,8 +2,8 @@
 
 Staff Database Reliability Engineer who builds platforms. I keep databases fast, boring and recoverable, and I turn the work around them into self-service.
 
-- **Deep:** PostgreSQL (RDS, Aurora) and DynamoDB
-- **Daily:** MySQL, MongoDB and Amazon DocumentDB
+- **Deep:** PostgreSQL and MySQL (RDS, Aurora), DynamoDB
+- **Daily:** MongoDB and Amazon DocumentDB
 - **Platform:** Apache Airflow as the engine, Backstage as the front door, Python in between
 - **Also:** Prometheus monitoring, partitioning, migrations, AI agents for database maintenance
 - **Certified:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
@@ -44,8 +44,8 @@ Contributing upstream to the tools I run in production:
 
 Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de dados rápidos, previsíveis e recuperáveis, e transformo o trabalho em volta deles em self-service.
 
-- **Fundo:** PostgreSQL (RDS, Aurora) e DynamoDB
-- **Dia a dia:** MySQL, MongoDB e Amazon DocumentDB
+- **Fundo:** PostgreSQL e MySQL (RDS, Aurora), DynamoDB
+- **Dia a dia:** MongoDB e Amazon DocumentDB
 - **Plataforma:** Apache Airflow como motor, Backstage como porta de entrada, Python no meio
 - **Também:** monitoração com Prometheus, particionamento, migrações, agentes de IA para manutenção de banco
 - **Certificações:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
