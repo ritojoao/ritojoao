@@ -26,4 +26,25 @@ Contributing upstream to the tools I run in production:
 
 ---
 
-🇧🇷 DBRE Staff, falo português. Aberto a freelas de PostgreSQL, Aurora e DynamoDB.
+<details>
+<summary>🇧🇷 Em português</summary>
+
+### Oi, sou o Rito 👋
+
+Staff Database Reliability Engineer. Mantenho bancos de dados rápidos, previsíveis e recuperáveis.
+
+- **Fundo:** PostgreSQL (RDS, Aurora) e DynamoDB
+- **Dia a dia:** MySQL, MongoDB e Amazon DocumentDB
+- **Código:** Python para automação, JavaScript para plugins do Backstage
+- **Também:** monitoração com Prometheus, particionamento, migrações, plataformas self-service
+
+#### O que já entreguei
+
+- Migrei PostgreSQL de produção do RDS para o Aurora com cutover abaixo de 5 minutos.
+- Resolvi throttling do DynamoDB num caminho crítico separando leitura e escrita (CQRS).
+- Montei um ciclo de vida de dados quente/morno/frio para tabelas grandes ficarem pequenas e baratas.
+- Liderei um portal interno com mais de 40 capacidades self-service usado por 4 times, levando o provisionamento de banco de dias para minutos.
+
+Sempre topo uma boa conversa sobre banco de dados em produção.
+
+</details>
