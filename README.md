@@ -6,7 +6,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 - **Daily:** MySQL, MongoDB and Amazon DocumentDB
 - **Platform:** Apache Airflow as the engine, Backstage as the front door, Python in between
 - **Also:** Prometheus monitoring, partitioning, migrations, AI agents for database maintenance
-- **Certified:** AWS Solutions Architect Professional, AWS Database Specialty
+- **Certified:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
 
 #### Things I've shipped
 
@@ -48,7 +48,7 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 - **Dia a dia:** MySQL, MongoDB e Amazon DocumentDB
 - **Plataforma:** Apache Airflow como motor, Backstage como porta de entrada, Python no meio
 - **Também:** monitoração com Prometheus, particionamento, migrações, agentes de IA para manutenção de banco
-- **Certificações:** AWS Solutions Architect Professional, AWS Database Specialty
+- **Certificações:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
 
 #### O que já entreguei
 
