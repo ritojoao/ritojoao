@@ -6,7 +6,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 - **Daily:** MongoDB and Amazon DocumentDB
 - **Platform:** Apache Airflow as the engine, Backstage as the front door, Python in between
 - **Also:** Prometheus monitoring, partitioning, migrations, AI agents for database maintenance
-- **Certified:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
+- **Certified:** AWS Solutions Architect Professional, Astronomer DAG Authoring for Apache Airflow 3, AWS Database Specialty (2023-2026), MongoDB skill badges in indexing design and CRUD ([Credly](https://www.credly.com/users/joao-victor-carvalho-rito/badges))
 
 #### Things I've shipped
 
@@ -48,7 +48,7 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 - **Dia a dia:** MongoDB e Amazon DocumentDB
 - **Plataforma:** Apache Airflow como motor, Backstage como porta de entrada, Python no meio
 - **Também:** monitoração com Prometheus, particionamento, migrações, agentes de IA para manutenção de banco
-- **Certificações:** AWS Solutions Architect Professional, AWS Database Specialty (2023-2026)
+- **Certificações:** AWS Solutions Architect Professional, Astronomer DAG Authoring for Apache Airflow 3, AWS Database Specialty (2023-2026), badges de MongoDB em design de índices e CRUD ([Credly](https://www.credly.com/users/joao-victor-carvalho-rito/badges))
 
 #### O que já entreguei
 
