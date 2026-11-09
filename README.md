@@ -9,7 +9,7 @@ Staff Database Reliability Engineer. I keep databases fast, boring and recoverab
 
 #### Things I've shipped
 
-- Moved production PostgreSQL from RDS to Aurora with a cutover under 5 minutes and a rollback path ([AWS blog](https://aws.amazon.com/pt/blogs/aws-brasil/nuvemshop-com-amazon-aurora-migracao-com-rollback-e-menor-custo/)).
+- Migrated 280+ production MySQL databases from RDS to Aurora: cutover under 5 minutes, rollback via reverse replication, about 40% lower cost ([AWS blog](https://aws.amazon.com/pt/blogs/aws-brasil/nuvemshop-com-amazon-aurora-migracao-com-rollback-e-menor-custo/)).
 - Fixed DynamoDB throttling on a hot path by splitting reads and writes (CQRS) ([TDC talk](https://thedevconf.com/tdc/2024/sao-paulo/trilha-microservices)).
 - Built a hot/warm/cold data lifecycle so large tables stay small and cheap.
 - Led an internal developer portal with 40+ self-service capabilities used by 4 teams, cutting database provisioning from days to minutes.
@@ -47,7 +47,7 @@ Staff Database Reliability Engineer. Mantenho bancos de dados rápidos, previsí
 
 #### O que já entreguei
 
-- Migrei PostgreSQL de produção do RDS para o Aurora com cutover abaixo de 5 minutos e caminho de rollback ([blog da AWS](https://aws.amazon.com/pt/blogs/aws-brasil/nuvemshop-com-amazon-aurora-migracao-com-rollback-e-menor-custo/)).
+- Migrei mais de 280 bancos MySQL de produção do RDS para o Aurora: cutover abaixo de 5 minutos, rollback por replicação reversa, custo cerca de 40% menor ([blog da AWS](https://aws.amazon.com/pt/blogs/aws-brasil/nuvemshop-com-amazon-aurora-migracao-com-rollback-e-menor-custo/)).
 - Resolvi throttling do DynamoDB num caminho crítico separando leitura e escrita (CQRS) ([palestra no TDC](https://thedevconf.com/tdc/2024/sao-paulo/trilha-microservices)).
 - Montei um ciclo de vida de dados quente/morno/frio para tabelas grandes ficarem pequenas e baratas.
 - Liderei um portal interno com mais de 40 capacidades self-service usado por 4 times, levando o provisionamento de banco de dias para minutos.
