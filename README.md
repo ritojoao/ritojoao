@@ -33,7 +33,15 @@ Contributing upstream to the tools I run in production:
 [mongodb_exporter](https://github.com/percona/mongodb_exporter) ·
 [dynamodump](https://github.com/bchew/dynamodump)
 
-<!-- merged PRs go here as they land -->
+**Merged upstream**
+
+| Project | What it fixes for users | PR | Merged |
+|---|---|---|---|
+| [Patroni](https://github.com/patroni/patroni) | After a Kubernetes node reboot, Patroni no longer refuses to start because of a stale member record from the old Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
+| [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` stops reporting a change on every run for settings that need a restart, like `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
+| [mydumper](https://github.com/mydumper/mydumper) | Checksums for table-level triggers (`-T`) are written and checked correctly, so restores can verify them. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
+
+<sub>In review: gh-ost, mydumper, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper. [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
 
 ---
 
@@ -65,6 +73,18 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 - **TDC São Paulo 2024:** [CQRS: Como reduzir custos e aumentar performance na cloud](https://thedevconf.com/tdc/2024/sao-paulo/trilha-microservices) · [slides](https://docs.google.com/presentation/d/1MUddJ2Zkv_d1oMYYrhSGPrCq2gbA401d/edit)
 - [Todas as palestras no TDC](https://thedevconf.com/palestrante/joaorito)
 - [Respostas no AWS re:Post](https://repost.aws/community/users/USAU0lQ_HCTcWesyNlS-K8Ag)
+
+#### Open source
+
+**Merged upstream**
+
+| Projeto | O que resolve para quem usa | PR | Merged |
+|---|---|---|---|
+| [Patroni](https://github.com/patroni/patroni) | Depois de reiniciar um node do Kubernetes, o Patroni não se recusa mais a subir por causa do registro antigo do Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
+| [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` para de acusar mudança a cada execução em parâmetros que pedem restart, como `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
+| [mydumper](https://github.com/mydumper/mydumper) | Checksum de triggers por tabela (`-T`) é gravado e conferido certo, então o restore consegue validar. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
+
+<sub>Em revisão: gh-ost, mydumper, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper. [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
