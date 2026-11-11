@@ -26,26 +26,33 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
+<img src="https://img.shields.io/badge/upstream%20PRs-52-1F6FEB?style=flat-square" alt="52 upstream PRs"> <img src="https://img.shields.io/badge/merged-8-2EA44F?style=flat-square" alt="8 merged"> <img src="https://img.shields.io/badge/projects-30-8250DF?style=flat-square" alt="30 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-2-E5A00D?style=flat-square" alt="thanked by maintainers 2">
+
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
 [postgres_exporter](https://github.com/prometheus-community/postgres_exporter) ·
 [mongodb_exporter](https://github.com/percona/mongodb_exporter) ·
 [dynamodump](https://github.com/bchew/dynamodump)
 
-**Merged upstream**
+<details open>
+<summary><b>Critical database infrastructure</b></summary>
 
-| Project | What it fixes for users | PR | Merged |
+| Project | Pull request | Merged by | Kind words |
 |---|---|---|---|
-| [mydumper](https://github.com/mydumper/mydumper) | Restoring with `--skip-indexes` no longer fails or warns about index checksums for indexes myloader did not create. | [#2394](https://github.com/mydumper/mydumper/pull/2394) | 2026-11-11 |
-| [Amazon DocumentDB tools](https://github.com/awslabs/amazon-documentdb-tools) | The metrics-collector sizing report now shows how many days of data it actually saw, and warns when that is shorter than the period you asked for. | [#232](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | 2026-11-11 |
-| [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | Reading MariaDB 11.7 binlogs no longer fails on query events such as `CREATE TABLE`. | [#650](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | 2026-11-11 |
-| [mydumper](https://github.com/mydumper/mydumper) | A dump cut short by SIGTERM or Ctrl+C no longer looks complete or leaves the global read lock held. | [#2391](https://github.com/mydumper/mydumper/pull/2391) | 2026-11-11 |
-| [mydumper](https://github.com/mydumper/mydumper) | `--ignore-set` is honored when loading with `--optimize-keys=SKIP`, so tables with an invalid `sql_mode` load again. | [#2392](https://github.com/mydumper/mydumper/pull/2392) | 2026-11-10 |
-| [Patroni](https://github.com/patroni/patroni) | After a Kubernetes node reboot, Patroni no longer refuses to start because of a stale member record from the old Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
-| [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` stops reporting a change on every run for settings that need a restart, like `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
-| [mydumper](https://github.com/mydumper/mydumper) | Checksums for table-level triggers (`-T`) are written and checked correctly, so restores can verify them. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
+| <img src="https://img.shields.io/badge/Patroni-database-1F6FEB?style=flat-square" alt="Patroni"><br>[patroni/patroni](https://github.com/patroni/patroni) | [Skip ensure_unique_name() with the Kubernetes DCS](https://github.com/patroni/patroni/pull/3770) | [@hughcapet](https://github.com/hughcapet) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Skip index checksum verification when --skip-indexes is used](https://github.com/mydumper/mydumper/pull/2394) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Honor --ignore-set when --optimize-keys=SKIP is used](https://github.com/mydumper/mydumper/pull/2392) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Handle SIGTERM and non-interactive SIGINT without holding locks or reporting success](https://github.com/mydumper/mydumper/pull/2391) | [@davidducos](https://github.com/davidducos) | 🙏 [@frankii91](https://github.com/mydumper/mydumper/pull/2391#issuecomment-6806876453) <i>"Thanks @ritojoao."</i> |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Fix table-level trigger checksum options](https://github.com/mydumper/mydumper/pull/2390) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/python--mysql--replication-database-1F6FEB?style=flat-square" alt="python-mysql-replication"><br>[julien-duponchelle/python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | [fix: parse MariaDB 11.7 Q_GTID_FLAGS3 and Q_CHARACTER_SET_COLLATIONS status variables](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | [@dongwook-chan](https://github.com/dongwook-chan) | 🙏 [@dongwook-chan](https://github.com/julien-duponchelle/python-mysql-replication/pull/650#issuecomment-6793818463) <i>"Thanks for the focused fix and regression test."</i> |
+| <img src="https://img.shields.io/badge/community.postgresql-database-1F6FEB?style=flat-square" alt="community.postgresql"><br>[ansible-collections/community.postgresql](https://github.com/ansible-collections/community.postgresql) | [fix(postgresql_alter_system): compare with the pending value when a restart is required](https://github.com/ansible-collections/community.postgresql/pull/977) | [@hunleyd](https://github.com/hunleyd) | |
+| <img src="https://img.shields.io/badge/Amazon%20DocumentDB%20tools-database-1F6FEB?style=flat-square" alt="Amazon DocumentDB tools"><br>[awslabs/amazon-documentdb-tools](https://github.com/awslabs/amazon-documentdb-tools) | [metrics-collector v2.5.2: report the observed data window, not only the requested period (#209)](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | [@tmcallaghan](https://github.com/tmcallaghan) | |
 
-<sub>In review: Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter. [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
+</details>
+
+**In review** · 43 open pull requests in 27 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter.
 
 ---
 
@@ -80,20 +87,27 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 #### Open source
 
-**Merged upstream**
+<img src="https://img.shields.io/badge/PRs%20upstream-52-1F6FEB?style=flat-square" alt="52 PRs upstream"> <img src="https://img.shields.io/badge/merged-8-2EA44F?style=flat-square" alt="8 merged"> <img src="https://img.shields.io/badge/projetos-30-8250DF?style=flat-square" alt="30 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-2-E5A00D?style=flat-square" alt="2 agradecimentos de mantenedores">
 
-| Projeto | O que resolve para quem usa | PR | Merged |
+<details open>
+<summary><b>Infraestrutura crítica de banco de dados</b></summary>
+
+| Projeto | Pull request | Merged por | Palavras gentis |
 |---|---|---|---|
-| [mydumper](https://github.com/mydumper/mydumper) | Restaurar com `--skip-indexes` não falha nem avisa mais sobre checksum de índices que o myloader não criou. | [#2394](https://github.com/mydumper/mydumper/pull/2394) | 2026-11-11 |
-| [Amazon DocumentDB tools](https://github.com/awslabs/amazon-documentdb-tools) | O relatório de dimensionamento do metrics-collector agora mostra quantos dias de dados ele realmente viu, e avisa quando é menos que o período pedido. | [#232](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | 2026-11-11 |
-| [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | Ler binlogs do MariaDB 11.7 não falha mais em eventos de query como `CREATE TABLE`. | [#650](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | 2026-11-11 |
-| [mydumper](https://github.com/mydumper/mydumper) | Um dump interrompido por SIGTERM ou Ctrl+C não parece mais completo nem deixa o read lock global preso. | [#2391](https://github.com/mydumper/mydumper/pull/2391) | 2026-11-11 |
-| [mydumper](https://github.com/mydumper/mydumper) | `--ignore-set` é respeitado ao carregar com `--optimize-keys=SKIP`, então tabelas com `sql_mode` inválido voltam a carregar. | [#2392](https://github.com/mydumper/mydumper/pull/2392) | 2026-11-10 |
-| [Patroni](https://github.com/patroni/patroni) | Depois de reiniciar um node do Kubernetes, o Patroni não se recusa mais a subir por causa do registro antigo do Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
-| [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` para de acusar mudança a cada execução em parâmetros que pedem restart, como `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
-| [mydumper](https://github.com/mydumper/mydumper) | Checksum de triggers por tabela (`-T`) é gravado e conferido certo, então o restore consegue validar. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
+| <img src="https://img.shields.io/badge/Patroni-database-1F6FEB?style=flat-square" alt="Patroni"><br>[patroni/patroni](https://github.com/patroni/patroni) | [Skip ensure_unique_name() with the Kubernetes DCS](https://github.com/patroni/patroni/pull/3770) | [@hughcapet](https://github.com/hughcapet) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Skip index checksum verification when --skip-indexes is used](https://github.com/mydumper/mydumper/pull/2394) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Honor --ignore-set when --optimize-keys=SKIP is used](https://github.com/mydumper/mydumper/pull/2392) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Handle SIGTERM and non-interactive SIGINT without holding locks or reporting success](https://github.com/mydumper/mydumper/pull/2391) | [@davidducos](https://github.com/davidducos) | 🙏 [@frankii91](https://github.com/mydumper/mydumper/pull/2391#issuecomment-6806876453) <i>"Thanks @ritojoao."</i> |
+| <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Fix table-level trigger checksum options](https://github.com/mydumper/mydumper/pull/2390) | [@davidducos](https://github.com/davidducos) | |
+| <img src="https://img.shields.io/badge/python--mysql--replication-database-1F6FEB?style=flat-square" alt="python-mysql-replication"><br>[julien-duponchelle/python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | [fix: parse MariaDB 11.7 Q_GTID_FLAGS3 and Q_CHARACTER_SET_COLLATIONS status variables](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | [@dongwook-chan](https://github.com/dongwook-chan) | 🙏 [@dongwook-chan](https://github.com/julien-duponchelle/python-mysql-replication/pull/650#issuecomment-6793818463) <i>"Thanks for the focused fix and regression test."</i> |
+| <img src="https://img.shields.io/badge/community.postgresql-database-1F6FEB?style=flat-square" alt="community.postgresql"><br>[ansible-collections/community.postgresql](https://github.com/ansible-collections/community.postgresql) | [fix(postgresql_alter_system): compare with the pending value when a restart is required](https://github.com/ansible-collections/community.postgresql/pull/977) | [@hunleyd](https://github.com/hunleyd) | |
+| <img src="https://img.shields.io/badge/Amazon%20DocumentDB%20tools-database-1F6FEB?style=flat-square" alt="Amazon DocumentDB tools"><br>[awslabs/amazon-documentdb-tools](https://github.com/awslabs/amazon-documentdb-tools) | [metrics-collector v2.5.2: report the observed data window, not only the requested period (#209)](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | [@tmcallaghan](https://github.com/tmcallaghan) | |
 
-<sub>Em revisão: Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter. [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
+</details>
+
+**Em revisão** · 43 pull requests abertos em 27 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter.
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
