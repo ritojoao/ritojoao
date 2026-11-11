@@ -27,7 +27,6 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 #### Open source
 
 Contributing upstream to the tools I run in production:
-[Apache Airflow](https://github.com/apache/airflow) ·
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
 [postgres_exporter](https://github.com/prometheus-community/postgres_exporter) ·
 [mongodb_exporter](https://github.com/percona/mongodb_exporter) ·
@@ -37,11 +36,16 @@ Contributing upstream to the tools I run in production:
 
 | Project | What it fixes for users | PR | Merged |
 |---|---|---|---|
+| [mydumper](https://github.com/mydumper/mydumper) | Restoring with `--skip-indexes` no longer fails or warns about index checksums for indexes myloader did not create. | [#2394](https://github.com/mydumper/mydumper/pull/2394) | 2026-11-11 |
+| [Amazon DocumentDB tools](https://github.com/awslabs/amazon-documentdb-tools) | The metrics-collector sizing report now shows how many days of data it actually saw, and warns when that is shorter than the period you asked for. | [#232](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | 2026-11-11 |
+| [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | Reading MariaDB 11.7 binlogs no longer fails on query events such as `CREATE TABLE`. | [#650](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | 2026-11-11 |
+| [mydumper](https://github.com/mydumper/mydumper) | A dump cut short by SIGTERM or Ctrl+C no longer looks complete or leaves the global read lock held. | [#2391](https://github.com/mydumper/mydumper/pull/2391) | 2026-11-11 |
+| [mydumper](https://github.com/mydumper/mydumper) | `--ignore-set` is honored when loading with `--optimize-keys=SKIP`, so tables with an invalid `sql_mode` load again. | [#2392](https://github.com/mydumper/mydumper/pull/2392) | 2026-11-10 |
 | [Patroni](https://github.com/patroni/patroni) | After a Kubernetes node reboot, Patroni no longer refuses to start because of a stale member record from the old Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
 | [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` stops reporting a change on every run for settings that need a restart, like `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
 | [mydumper](https://github.com/mydumper/mydumper) | Checksums for table-level triggers (`-T`) are written and checked correctly, so restores can verify them. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
 
-<sub>In review: gh-ost, mydumper, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper. [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
+<sub>In review: Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter. [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
 
 ---
 
@@ -80,11 +84,16 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 | Projeto | O que resolve para quem usa | PR | Merged |
 |---|---|---|---|
+| [mydumper](https://github.com/mydumper/mydumper) | Restaurar com `--skip-indexes` não falha nem avisa mais sobre checksum de índices que o myloader não criou. | [#2394](https://github.com/mydumper/mydumper/pull/2394) | 2026-11-11 |
+| [Amazon DocumentDB tools](https://github.com/awslabs/amazon-documentdb-tools) | O relatório de dimensionamento do metrics-collector agora mostra quantos dias de dados ele realmente viu, e avisa quando é menos que o período pedido. | [#232](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | 2026-11-11 |
+| [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication) | Ler binlogs do MariaDB 11.7 não falha mais em eventos de query como `CREATE TABLE`. | [#650](https://github.com/julien-duponchelle/python-mysql-replication/pull/650) | 2026-11-11 |
+| [mydumper](https://github.com/mydumper/mydumper) | Um dump interrompido por SIGTERM ou Ctrl+C não parece mais completo nem deixa o read lock global preso. | [#2391](https://github.com/mydumper/mydumper/pull/2391) | 2026-11-11 |
+| [mydumper](https://github.com/mydumper/mydumper) | `--ignore-set` é respeitado ao carregar com `--optimize-keys=SKIP`, então tabelas com `sql_mode` inválido voltam a carregar. | [#2392](https://github.com/mydumper/mydumper/pull/2392) | 2026-11-10 |
 | [Patroni](https://github.com/patroni/patroni) | Depois de reiniciar um node do Kubernetes, o Patroni não se recusa mais a subir por causa do registro antigo do Pod. | [#3770](https://github.com/patroni/patroni/pull/3770) | 2026-11-10 |
 | [community.postgresql](https://github.com/ansible-collections/community.postgresql) | `postgresql_alter_system` para de acusar mudança a cada execução em parâmetros que pedem restart, como `shared_preload_libraries`. | [#977](https://github.com/ansible-collections/community.postgresql/pull/977) | 2026-11-10 |
 | [mydumper](https://github.com/mydumper/mydumper) | Checksum de triggers por tabela (`-T`) é gravado e conferido certo, então o restore consegue validar. | [#2390](https://github.com/mydumper/mydumper/pull/2390) | 2026-11-10 |
 
-<sub>Em revisão: gh-ost, mydumper, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper. [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
+<sub>Em revisão: Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, pgstream, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter. [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)</sub>
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
