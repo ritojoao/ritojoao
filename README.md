@@ -26,7 +26,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
-<img src="https://img.shields.io/badge/upstream%20PRs-88-1F6FEB?style=flat-square" alt="88 upstream PRs"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projects-52-8250DF?style=flat-square" alt="52 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-5-E5A00D?style=flat-square" alt="thanked by maintainers 5">
+<img src="https://img.shields.io/badge/upstream%20PRs-88-1F6FEB?style=flat-square" alt="88 upstream PRs"> <img src="https://img.shields.io/badge/merged-15-2EA44F?style=flat-square" alt="15 merged"> <img src="https://img.shields.io/badge/projects-52-8250DF?style=flat-square" alt="52 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-6-E5A00D?style=flat-square" alt="thanked by maintainers 6">
 
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
@@ -38,6 +38,9 @@ Contributing upstream to the tools I run in production:
 
 | Project | Pull request | Merged by | Kind words |
 |---|---|---|---|
+| <img src="https://img.shields.io/badge/agenda-database-1F6FEB?style=flat-square" alt="agenda"><br>[agenda/agenda](https://github.com/agenda/agenda) | [fix(agenda): release prefetched jobs when drain() finishes](https://github.com/agenda/agenda/pull/1819) | [@simllll](https://github.com/simllll) | 🙏 [@simllll](https://github.com/agenda/agenda/pull/1819#issuecomment-6850586896) <i>"Thanks for the fix."</i> |
+| <img src="https://img.shields.io/badge/pg__repack-database-1F6FEB?style=flat-square" alt="pg_repack"><br>[reorg/pg_repack](https://github.com/reorg/pg_repack) | [Use format() and pg_catalog-qualified catalog tables in pg_repack.sql.in](https://github.com/reorg/pg_repack/pull/493) | [@za-arthur](https://github.com/za-arthur) |  |
+| <img src="https://img.shields.io/badge/pgAdmin%204-database-1F6FEB?style=flat-square" alt="pgAdmin 4"><br>[pgadmin-org/pgadmin4](https://github.com/pgadmin-org/pgadmin4) | [docs: split Dashboard out of Tabbed Browser into its own page](https://github.com/pgadmin-org/pgadmin4/pull/10769) | [@dpage](https://github.com/dpage) |  |
 | <img src="https://img.shields.io/badge/Patroni-database-1F6FEB?style=flat-square" alt="Patroni"><br>[patroni/patroni](https://github.com/patroni/patroni) | [Skip ensure_unique_name() with the Kubernetes DCS](https://github.com/patroni/patroni/pull/3770) | [@hughcapet](https://github.com/hughcapet) | |
 | <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Skip index checksum verification when --skip-indexes is used](https://github.com/mydumper/mydumper/pull/2394) | [@davidducos](https://github.com/davidducos) | |
 | <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Honor --ignore-set when --optimize-keys=SKIP is used](https://github.com/mydumper/mydumper/pull/2392) | [@davidducos](https://github.com/davidducos) | |
@@ -53,9 +56,9 @@ Contributing upstream to the tools I run in production:
 
 </details>
 
-**In review** · 73 open pull requests in 49 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**In review** · 70 open pull requests in 47 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, connectors and ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, agenda, python-mysql-replication.
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, connectors and ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, python-mysql-replication.
 
 ---
 
@@ -90,13 +93,16 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 #### Open source
 
-<img src="https://img.shields.io/badge/PRs%20upstream-88-1F6FEB?style=flat-square" alt="88 PRs upstream"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projetos-52-8250DF?style=flat-square" alt="52 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-5-E5A00D?style=flat-square" alt="5 agradecimentos de mantenedores">
+<img src="https://img.shields.io/badge/PRs%20upstream-88-1F6FEB?style=flat-square" alt="88 PRs upstream"> <img src="https://img.shields.io/badge/merged-15-2EA44F?style=flat-square" alt="15 merged"> <img src="https://img.shields.io/badge/projetos-52-8250DF?style=flat-square" alt="52 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-6-E5A00D?style=flat-square" alt="6 agradecimentos de mantenedores">
 
 <details open>
 <summary><b>Infraestrutura crítica de banco de dados</b></summary>
 
 | Projeto | Pull request | Merged por | Palavras gentis |
 |---|---|---|---|
+| <img src="https://img.shields.io/badge/agenda-database-1F6FEB?style=flat-square" alt="agenda"><br>[agenda/agenda](https://github.com/agenda/agenda) | [fix(agenda): release prefetched jobs when drain() finishes](https://github.com/agenda/agenda/pull/1819) | [@simllll](https://github.com/simllll) | 🙏 [@simllll](https://github.com/agenda/agenda/pull/1819#issuecomment-6850586896) <i>"Thanks for the fix."</i> |
+| <img src="https://img.shields.io/badge/pg__repack-database-1F6FEB?style=flat-square" alt="pg_repack"><br>[reorg/pg_repack](https://github.com/reorg/pg_repack) | [Use format() and pg_catalog-qualified catalog tables in pg_repack.sql.in](https://github.com/reorg/pg_repack/pull/493) | [@za-arthur](https://github.com/za-arthur) |  |
+| <img src="https://img.shields.io/badge/pgAdmin%204-database-1F6FEB?style=flat-square" alt="pgAdmin 4"><br>[pgadmin-org/pgadmin4](https://github.com/pgadmin-org/pgadmin4) | [docs: split Dashboard out of Tabbed Browser into its own page](https://github.com/pgadmin-org/pgadmin4/pull/10769) | [@dpage](https://github.com/dpage) |  |
 | <img src="https://img.shields.io/badge/Patroni-database-1F6FEB?style=flat-square" alt="Patroni"><br>[patroni/patroni](https://github.com/patroni/patroni) | [Skip ensure_unique_name() with the Kubernetes DCS](https://github.com/patroni/patroni/pull/3770) | [@hughcapet](https://github.com/hughcapet) | |
 | <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Skip index checksum verification when --skip-indexes is used](https://github.com/mydumper/mydumper/pull/2394) | [@davidducos](https://github.com/davidducos) | |
 | <img src="https://img.shields.io/badge/mydumper-database-1F6FEB?style=flat-square" alt="mydumper"><br>[mydumper/mydumper](https://github.com/mydumper/mydumper) | [Honor --ignore-set when --optimize-keys=SKIP is used](https://github.com/mydumper/mydumper/pull/2392) | [@davidducos](https://github.com/davidducos) | |
@@ -112,9 +118,9 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 </details>
 
-**Em revisão** · 73 pull requests abertos em 49 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**Em revisão** · 70 pull requests abertos em 47 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, conectores e ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, agenda, python-mysql-replication.
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, conectores e ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, python-mysql-replication.
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
