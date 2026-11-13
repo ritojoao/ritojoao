@@ -26,7 +26,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
-<img src="https://img.shields.io/badge/upstream%20PRs-88-1F6FEB?style=flat-square" alt="88 upstream PRs"> <img src="https://img.shields.io/badge/merged-16-2EA44F?style=flat-square" alt="16 merged"> <img src="https://img.shields.io/badge/projects-52-8250DF?style=flat-square" alt="52 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 6">
+<img src="https://img.shields.io/badge/upstream%20PRs-88-1F6FEB?style=flat-square" alt="88 upstream PRs"> <img src="https://img.shields.io/badge/merged-16-2EA44F?style=flat-square" alt="16 merged"> <img src="https://img.shields.io/badge/projects-52-8250DF?style=flat-square" alt="52 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 7">
 
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
