@@ -26,7 +26,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
-<img src="https://img.shields.io/badge/upstream%20PRs-84-1F6FEB?style=flat-square" alt="84 upstream PRs"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projects-48-8250DF?style=flat-square" alt="48 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-5-E5A00D?style=flat-square" alt="thanked by maintainers 5">
+<img src="https://img.shields.io/badge/upstream%20PRs-88-1F6FEB?style=flat-square" alt="88 upstream PRs"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projects-52-8250DF?style=flat-square" alt="52 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-5-E5A00D?style=flat-square" alt="thanked by maintainers 5">
 
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
@@ -53,9 +53,9 @@ Contributing upstream to the tools I run in production:
 
 </details>
 
-**In review** · 69 open pull requests in 45 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**In review** · 73 open pull requests in 49 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, connectors and ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc.
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, connectors and ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, agenda, python-mysql-replication.
 
 ---
 
@@ -90,7 +90,7 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 #### Open source
 
-<img src="https://img.shields.io/badge/PRs%20upstream-84-1F6FEB?style=flat-square" alt="84 PRs upstream"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projetos-48-8250DF?style=flat-square" alt="48 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-5-E5A00D?style=flat-square" alt="5 agradecimentos de mantenedores">
+<img src="https://img.shields.io/badge/PRs%20upstream-88-1F6FEB?style=flat-square" alt="88 PRs upstream"> <img src="https://img.shields.io/badge/merged-12-2EA44F?style=flat-square" alt="12 merged"> <img src="https://img.shields.io/badge/projetos-52-8250DF?style=flat-square" alt="52 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-5-E5A00D?style=flat-square" alt="5 agradecimentos de mantenedores">
 
 <details open>
 <summary><b>Infraestrutura crítica de banco de dados</b></summary>
@@ -112,9 +112,9 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 </details>
 
-**Em revisão** · 69 pull requests abertos em 45 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**Em revisão** · 73 pull requests abertos em 49 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, conectores e ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc.
+Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, conectores e ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, pgAdmin, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, agenda, python-mysql-replication.
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
