@@ -26,7 +26,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
-<img src="https://img.shields.io/badge/upstream%20PRs-91-1F6FEB?style=flat-square" alt="91 upstream PRs"> <img src="https://img.shields.io/badge/merged-16-2EA44F?style=flat-square" alt="16 merged"> <img src="https://img.shields.io/badge/projects-54-8250DF?style=flat-square" alt="54 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 7">
+<img src="https://img.shields.io/badge/upstream%20PRs-92-1F6FEB?style=flat-square" alt="92 upstream PRs"> <img src="https://img.shields.io/badge/merged-18-2EA44F?style=flat-square" alt="18 merged"> <img src="https://img.shields.io/badge/projects-56-8250DF?style=flat-square" alt="56 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 7">
 
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
@@ -53,11 +53,12 @@ Contributing upstream to the tools I run in production:
 | <img src="https://img.shields.io/badge/pg__repack-database-1F6FEB?style=flat-square" alt="pg_repack"><br>[reorg/pg_repack](https://github.com/reorg/pg_repack) | [Cancel in-progress index builds on SIGINT with --jobs](https://github.com/reorg/pg_repack/pull/489) | [@za-arthur](https://github.com/za-arthur) | |
 | <img src="https://img.shields.io/badge/ProxySQL-database-1F6FEB?style=flat-square" alt="ProxySQL"><br>[sysown/proxysql](https://github.com/sysown/proxysql) | [deps: remove stale pcre2 dir before re-extracting on rebuild](https://github.com/sysown/proxysql/pull/6622) | [@renecannao](https://github.com/renecannao) | 🙏 [@renecannao](https://github.com/sysown/proxysql/pull/6622#issuecomment-6861391153) <i>"Thank you for the PR !"</i> |
 | <img src="https://img.shields.io/badge/community.postgresql-database-1F6FEB?style=flat-square" alt="community.postgresql"><br>[ansible-collections/community.postgresql](https://github.com/ansible-collections/community.postgresql) | [fix(postgresql_alter_system): compare with the pending value when a restart is required](https://github.com/ansible-collections/community.postgresql/pull/977) | [@hunleyd](https://github.com/hunleyd) | |
+| <img src="https://img.shields.io/badge/Postgres%20Operator-database-1F6FEB?style=flat-square" alt="Postgres Operator"><br>[zalando/postgres-operator](https://github.com/zalando/postgres-operator) | [Fix logging and flag statements in the command line docs](https://github.com/zalando/postgres-operator/pull/3232) | [@FxKu](https://github.com/FxKu) | |
 | <img src="https://img.shields.io/badge/Amazon%20DocumentDB%20tools-database-1F6FEB?style=flat-square" alt="Amazon DocumentDB tools"><br>[awslabs/amazon-documentdb-tools](https://github.com/awslabs/amazon-documentdb-tools) | [metrics-collector v2.5.2: report the observed data window, not only the requested period (#209)](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | [@tmcallaghan](https://github.com/tmcallaghan) | |
 
 </details>
 
-**In review** · 71 open pull requests in 48 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**In review** · 70 open pull requests in 47 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
 A selection of open pull requests, grouped by area:
 
@@ -65,6 +66,7 @@ A selection of open pull requests, grouped by area:
 
 - [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
+- [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1710): send cancel requests to the host of the cancelled backend
 - [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
 - [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
 - [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
@@ -139,7 +141,7 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 #### Open source
 
-<img src="https://img.shields.io/badge/PRs%20upstream-91-1F6FEB?style=flat-square" alt="91 PRs upstream"> <img src="https://img.shields.io/badge/merged-16-2EA44F?style=flat-square" alt="16 merged"> <img src="https://img.shields.io/badge/projetos-54-8250DF?style=flat-square" alt="54 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-7-E5A00D?style=flat-square" alt="7 agradecimentos de mantenedores">
+<img src="https://img.shields.io/badge/PRs%20upstream-92-1F6FEB?style=flat-square" alt="92 PRs upstream"> <img src="https://img.shields.io/badge/merged-18-2EA44F?style=flat-square" alt="18 merged"> <img src="https://img.shields.io/badge/projetos-56-8250DF?style=flat-square" alt="56 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-7-E5A00D?style=flat-square" alt="7 agradecimentos de mantenedores">
 
 <details open>
 <summary><b>Infraestrutura crítica de banco de dados</b></summary>
@@ -161,11 +163,12 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 | <img src="https://img.shields.io/badge/pg__repack-database-1F6FEB?style=flat-square" alt="pg_repack"><br>[reorg/pg_repack](https://github.com/reorg/pg_repack) | [Cancel in-progress index builds on SIGINT with --jobs](https://github.com/reorg/pg_repack/pull/489) | [@za-arthur](https://github.com/za-arthur) | |
 | <img src="https://img.shields.io/badge/ProxySQL-database-1F6FEB?style=flat-square" alt="ProxySQL"><br>[sysown/proxysql](https://github.com/sysown/proxysql) | [deps: remove stale pcre2 dir before re-extracting on rebuild](https://github.com/sysown/proxysql/pull/6622) | [@renecannao](https://github.com/renecannao) | 🙏 [@renecannao](https://github.com/sysown/proxysql/pull/6622#issuecomment-6861391153) <i>"Thank you for the PR !"</i> |
 | <img src="https://img.shields.io/badge/community.postgresql-database-1F6FEB?style=flat-square" alt="community.postgresql"><br>[ansible-collections/community.postgresql](https://github.com/ansible-collections/community.postgresql) | [fix(postgresql_alter_system): compare with the pending value when a restart is required](https://github.com/ansible-collections/community.postgresql/pull/977) | [@hunleyd](https://github.com/hunleyd) | |
+| <img src="https://img.shields.io/badge/Postgres%20Operator-database-1F6FEB?style=flat-square" alt="Postgres Operator"><br>[zalando/postgres-operator](https://github.com/zalando/postgres-operator) | [Fix logging and flag statements in the command line docs](https://github.com/zalando/postgres-operator/pull/3232) | [@FxKu](https://github.com/FxKu) | |
 | <img src="https://img.shields.io/badge/Amazon%20DocumentDB%20tools-database-1F6FEB?style=flat-square" alt="Amazon DocumentDB tools"><br>[awslabs/amazon-documentdb-tools](https://github.com/awslabs/amazon-documentdb-tools) | [metrics-collector v2.5.2: report the observed data window, not only the requested period (#209)](https://github.com/awslabs/amazon-documentdb-tools/pull/232) | [@tmcallaghan](https://github.com/tmcallaghan) | |
 
 </details>
 
-**Em revisão** · 71 pull requests abertos em 48 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
+**Em revisão** · 70 pull requests abertos em 47 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
 Seleção de pull requests abertos, por área:
 
@@ -173,6 +176,7 @@ Seleção de pull requests abertos, por área:
 
 - [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
+- [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1710): send cancel requests to the host of the cancelled backend
 - [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
 - [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
 - [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
