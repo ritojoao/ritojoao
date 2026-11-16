@@ -59,7 +59,52 @@ Contributing upstream to the tools I run in production:
 
 **In review** · 71 open pull requests in 48 projects · [All my PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, connectors and ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, python-mysql-replication, Odyssey, valkey-py.
+A selection of open pull requests, grouped by area:
+
+**PostgreSQL and ecosystem**
+
+- [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
+- [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
+- [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
+- [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
+- [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
+- [pg_cron](https://github.com/citusdata/pg_cron/pull/446): keep failed status when a worker job emits a warning after its error
+- [pgbadger](https://github.com/darold/pgbadger/pull/891): permalink anchors for query and error entries in the HTML report
+
+**MySQL**
+
+- [gh-ost](https://github.com/github/gh-ost/pull/1805): drop ghost table after successful instant DDL
+- [mydumper](https://github.com/mydumper/mydumper/pull/2401): concurrent `--exec` workers could abort with "pid not found"
+- [WAL-G](https://github.com/wal-g/wal-g/pull/2777): skip binlogs covered by the backup on MySQL replay
+- [go-mysql](https://github.com/go-mysql-org/go-mysql/pull/1239): fix sign of legacy `MYSQL_TYPE_TIME` values
+- [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication/pull/652): resume from the last committed GTID on reconnect
+
+**Drivers**
+
+- [psycopg](https://github.com/psycopg/psycopg/pull/1496): read special connection params from the pg_service file
+- [asyncpg](https://github.com/MagicStack/asyncpg/pull/1407): fix COPY OUT losing data when a notice arrives between CopyData messages
+- [node-postgres](https://github.com/brianc/node-postgres/pull/3860): pg-cursor: report an error that arrives after CommandComplete
+- [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql/pull/1850): return ErrMalformPkt for truncated handshake packets
+- [PyMySQL](https://github.com/PyMySQL/PyMySQL/pull/1295): add timeout argument to `Connection.ping()`
+
+**Operators and Kubernetes**
+
+- [Postgres Operator](https://github.com/zalando/postgres-operator/pull/3236): sync connection pooler deployment when pod affinity changes
+- [Percona XtraDB Cluster Operator](https://github.com/percona/percona-xtradb-cluster-operator/pull/2621): honor `s3.prefix` for PITR binlog collector and restore
+- [mariadb-operator](https://github.com/mariadb-operator/mariadb-operator/pull/2027): set S3 multipart part size to stay within 1000 parts
+- [redis-operator](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1974): apply updateStrategy and service annotations to the embedded Sentinel
+- [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg/pull/11895): keep error messages in the JSON output of `status`
+
+**Tools**
+
+- [pg_repack](https://github.com/reorg/pg_repack/pull/491): terminate pg_repack's own old backends in the cleanup callback
+- [pgcopydb](https://github.com/dimitri/pgcopydb/pull/1082): fix `stream sentinel get --json` reporting startpos as endpos
+- [pev2](https://github.com/dalibo/pev2/pull/979): parse and show the "Single Copy" field of Gather nodes
+- [awslabs/mcp](https://github.com/awslabs/mcp/pull/5092): resolve RDS MySQL/MariaDB instance by identifier alone
+- [dynamodump](https://github.com/bchew/dynamodump/pull/373): decode nested binary values on restore
+
+I also review patches on the PostgreSQL Commitfest and discuss them on pgsql-hackers.
+
 
 ---
 
@@ -122,7 +167,52 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 **Em revisão** · 71 pull requests abertos em 48 projetos · [Todos os meus PRs](https://github.com/search?q=author%3Aritojoao+is%3Apr+-user%3Aritojoao&type=pullrequests)
 
-Patroni, mydumper, gh-ost, postgres_exporter, pg_repack, ProxySQL, WAL-G, pgroll, pgstream, PyMySQL, PynamoDB, dynamodump, awslabs/mcp, Aurora DSQL tools, conectores e ORMs, aws-advanced-python-wrapper, pg_partman, pgBouncer, pgcli, psycopg, CloudNativePG, Postgres Operator, Liquibase, go-sql-driver/mysql, go-mysql, mariadb-operator, redis-operator, Apache AGE, ldap2pg, prometheus-rds-exporter, pev2, pgbadger, powa-web, libpg_query, asyncpg, aiomysql, pg_auto_failover, pg_cron, pg_activity, pgcopydb, Percona XtraDB Cluster Operator, sqlc, pgloader, pg_timetable, node-postgres, python-mysql-replication, Odyssey, valkey-py.
+Seleção de pull requests abertos, por área:
+
+**PostgreSQL e ecossistema**
+
+- [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
+- [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
+- [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
+- [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
+- [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
+- [pg_cron](https://github.com/citusdata/pg_cron/pull/446): keep failed status when a worker job emits a warning after its error
+- [pgbadger](https://github.com/darold/pgbadger/pull/891): permalink anchors for query and error entries in the HTML report
+
+**MySQL**
+
+- [gh-ost](https://github.com/github/gh-ost/pull/1805): drop ghost table after successful instant DDL
+- [mydumper](https://github.com/mydumper/mydumper/pull/2401): concurrent `--exec` workers could abort with "pid not found"
+- [WAL-G](https://github.com/wal-g/wal-g/pull/2777): skip binlogs covered by the backup on MySQL replay
+- [go-mysql](https://github.com/go-mysql-org/go-mysql/pull/1239): fix sign of legacy `MYSQL_TYPE_TIME` values
+- [python-mysql-replication](https://github.com/julien-duponchelle/python-mysql-replication/pull/652): resume from the last committed GTID on reconnect
+
+**Drivers**
+
+- [psycopg](https://github.com/psycopg/psycopg/pull/1496): read special connection params from the pg_service file
+- [asyncpg](https://github.com/MagicStack/asyncpg/pull/1407): fix COPY OUT losing data when a notice arrives between CopyData messages
+- [node-postgres](https://github.com/brianc/node-postgres/pull/3860): pg-cursor: report an error that arrives after CommandComplete
+- [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql/pull/1850): return ErrMalformPkt for truncated handshake packets
+- [PyMySQL](https://github.com/PyMySQL/PyMySQL/pull/1295): add timeout argument to `Connection.ping()`
+
+**Operadores e Kubernetes**
+
+- [Postgres Operator](https://github.com/zalando/postgres-operator/pull/3236): sync connection pooler deployment when pod affinity changes
+- [Percona XtraDB Cluster Operator](https://github.com/percona/percona-xtradb-cluster-operator/pull/2621): honor `s3.prefix` for PITR binlog collector and restore
+- [mariadb-operator](https://github.com/mariadb-operator/mariadb-operator/pull/2027): set S3 multipart part size to stay within 1000 parts
+- [redis-operator](https://github.com/OT-CONTAINER-KIT/redis-operator/pull/1974): apply updateStrategy and service annotations to the embedded Sentinel
+- [CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg/pull/11895): keep error messages in the JSON output of `status`
+
+**Ferramentas**
+
+- [pg_repack](https://github.com/reorg/pg_repack/pull/491): terminate pg_repack's own old backends in the cleanup callback
+- [pgcopydb](https://github.com/dimitri/pgcopydb/pull/1082): fix `stream sentinel get --json` reporting startpos as endpos
+- [pev2](https://github.com/dalibo/pev2/pull/979): parse and show the "Single Copy" field of Gather nodes
+- [awslabs/mcp](https://github.com/awslabs/mcp/pull/5092): resolve RDS MySQL/MariaDB instance by identifier alone
+- [dynamodump](https://github.com/bchew/dynamodump/pull/373): decode nested binary values on restore
+
+Também reviso patches no Commitfest do PostgreSQL e discuto na pgsql-hackers.
+
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
 
