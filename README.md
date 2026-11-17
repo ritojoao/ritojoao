@@ -26,7 +26,7 @@ Staff Database Reliability Engineer who builds platforms. I keep databases fast,
 
 #### Open source
 
-<img src="https://img.shields.io/badge/upstream%20PRs-92-1F6FEB?style=flat-square" alt="92 upstream PRs"> <img src="https://img.shields.io/badge/merged-18-2EA44F?style=flat-square" alt="18 merged"> <img src="https://img.shields.io/badge/projects-56-8250DF?style=flat-square" alt="56 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 7">
+<img src="https://img.shields.io/badge/upstream%20PRs-95-1F6FEB?style=flat-square" alt="95 upstream PRs"> <img src="https://img.shields.io/badge/merged-20-2EA44F?style=flat-square" alt="20 merged"> <img src="https://img.shields.io/badge/projects-56-8250DF?style=flat-square" alt="56 projects"> <img src="https://img.shields.io/badge/thanked%20by%20maintainers-7-E5A00D?style=flat-square" alt="thanked by maintainers 7">
 
 Contributing upstream to the tools I run in production:
 [pg_partman](https://github.com/pgpartman/pg_partman) ·
@@ -67,6 +67,7 @@ A selection of open pull requests, grouped by area:
 - [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1710): send cancel requests to the host of the cancelled backend
+- [pg_ivm](https://github.com/sraoss/pg_ivm/pull/189): fix error in `recalc_and_set_values()` for self-join IMMV with min/max
 - [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
 - [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
 - [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
@@ -141,7 +142,7 @@ Staff Database Reliability Engineer que constrói plataforma. Mantenho bancos de
 
 #### Open source
 
-<img src="https://img.shields.io/badge/PRs%20upstream-92-1F6FEB?style=flat-square" alt="92 PRs upstream"> <img src="https://img.shields.io/badge/merged-18-2EA44F?style=flat-square" alt="18 merged"> <img src="https://img.shields.io/badge/projetos-56-8250DF?style=flat-square" alt="56 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-7-E5A00D?style=flat-square" alt="7 agradecimentos de mantenedores">
+<img src="https://img.shields.io/badge/PRs%20upstream-95-1F6FEB?style=flat-square" alt="95 PRs upstream"> <img src="https://img.shields.io/badge/merged-20-2EA44F?style=flat-square" alt="20 merged"> <img src="https://img.shields.io/badge/projetos-56-8250DF?style=flat-square" alt="56 projetos"> <img src="https://img.shields.io/badge/agradecimentos%20de%20mantenedores-7-E5A00D?style=flat-square" alt="7 agradecimentos de mantenedores">
 
 <details open>
 <summary><b>Infraestrutura crítica de banco de dados</b></summary>
@@ -177,6 +178,7 @@ Seleção de pull requests abertos, por área:
 - [WAL-G](https://github.com/wal-g/wal-g/pull/2796): keep all timeline switches that fall into one WAL segment
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1700): retry queued peer cancel requests
 - [pgBouncer](https://github.com/pgbouncer/pgbouncer/pull/1710): send cancel requests to the host of the cancelled backend
+- [pg_ivm](https://github.com/sraoss/pg_ivm/pull/189): fix error in `recalc_and_set_values()` for self-join IMMV with min/max
 - [postgres_exporter](https://github.com/prometheus-community/postgres_exporter/pull/1456): stop waiting for stuck legacy queries at collection timeout
 - [pg_partman](https://github.com/pgpartman/pg_partman/pull/886): copy exclusion constraints from the template table to child tables
 - [pgroll](https://github.com/xataio/pgroll/pull/1057): fail `migrate` when a migration is already active
