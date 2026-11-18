@@ -106,7 +106,7 @@ A selection of open pull requests, grouped by area:
 - [awslabs/mcp](https://github.com/awslabs/mcp/pull/5092): resolve RDS MySQL/MariaDB instance by identifier alone
 - [dynamodump](https://github.com/bchew/dynamodump/pull/373): decode nested binary values on restore
 
-I also review patches on the PostgreSQL Commitfest and discuss them on pgsql-hackers.
+I also review patches on the PostgreSQL Commitfest and discuss them on pgsql-hackers. One of my patches is in PostgreSQL itself: [xid_wraparound: Fix XID consumption accounting](https://github.com/postgres/postgres/commit/1b4abc23f) (committed by Fujii Masao, backpatched to 17).
 
 
 ---
@@ -217,7 +217,7 @@ Seleção de pull requests abertos, por área:
 - [awslabs/mcp](https://github.com/awslabs/mcp/pull/5092): resolve RDS MySQL/MariaDB instance by identifier alone
 - [dynamodump](https://github.com/bchew/dynamodump/pull/373): decode nested binary values on restore
 
-Também reviso patches no Commitfest do PostgreSQL e discuto na pgsql-hackers.
+Também reviso patches no Commitfest do PostgreSQL e discuto na pgsql-hackers. Um dos meus patches está no próprio PostgreSQL: [xid_wraparound: Fix XID consumption accounting](https://github.com/postgres/postgres/commit/1b4abc23f) (commit de Fujii Masao, backpatch até a 17).
 
 
 Sempre topo uma boa conversa sobre banco de dados em produção.
